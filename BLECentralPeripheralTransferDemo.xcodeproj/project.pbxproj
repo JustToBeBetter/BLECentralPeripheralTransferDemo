@@ -15,6 +15,9 @@
 		0AF276DA1CD20172000F5261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF276D81CD20172000F5261 /* LaunchScreen.storyboard */; };
 		0AF276E51CD20172000F5261 /* BLECentralPeripheralTransferDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF276E41CD20172000F5261 /* BLECentralPeripheralTransferDemoTests.m */; };
 		0AF276F01CD20172000F5261 /* BLECentralPeripheralTransferDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF276EF1CD20172000F5261 /* BLECentralPeripheralTransferDemoUITests.m */; };
+		0AF276FE1CD201B6000F5261 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF276FD1CD201B6000F5261 /* CoreBluetooth.framework */; };
+		0AF277011CD2062A000F5261 /* LJZBTEPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF277001CD2062A000F5261 /* LJZBTEPeripheralViewController.m */; };
+		0AF277031CD207CD000F5261 /* LJZBTEPeripheralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF277021CD207CD000F5261 /* LJZBTEPeripheralViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		0AF276EB1CD20172000F5261 /* BLECentralPeripheralTransferDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLECentralPeripheralTransferDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF276EF1CD20172000F5261 /* BLECentralPeripheralTransferDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLECentralPeripheralTransferDemoUITests.m; sourceTree = "<group>"; };
 		0AF276F11CD20172000F5261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF276FD1CD201B6000F5261 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0AF276FF1CD2062A000F5261 /* LJZBTEPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJZBTEPeripheralViewController.h; sourceTree = "<group>"; };
+		0AF277001CD2062A000F5261 /* LJZBTEPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZBTEPeripheralViewController.m; sourceTree = "<group>"; };
+		0AF277021CD207CD000F5261 /* LJZBTEPeripheralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJZBTEPeripheralViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF276FE1CD201B6000F5261 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 		0AF276BE1CD20172000F5261 = {
 			isa = PBXGroup;
 			children = (
+				0AF276FD1CD201B6000F5261 /* CoreBluetooth.framework */,
 				0AF276C91CD20172000F5261 /* BLECentralPeripheralTransferDemo */,
 				0AF276E31CD20172000F5261 /* BLECentralPeripheralTransferDemoTests */,
 				0AF276EE1CD20172000F5261 /* BLECentralPeripheralTransferDemoUITests */,
@@ -105,6 +114,9 @@
 				0AF276CE1CD20172000F5261 /* AppDelegate.m */,
 				0AF276D01CD20172000F5261 /* ViewController.h */,
 				0AF276D11CD20172000F5261 /* ViewController.m */,
+				0AF276FF1CD2062A000F5261 /* LJZBTEPeripheralViewController.h */,
+				0AF277001CD2062A000F5261 /* LJZBTEPeripheralViewController.m */,
+				0AF277021CD207CD000F5261 /* LJZBTEPeripheralViewController.xib */,
 				0AF276D31CD20172000F5261 /* Main.storyboard */,
 				0AF276D61CD20172000F5261 /* Assets.xcassets */,
 				0AF276D81CD20172000F5261 /* LaunchScreen.storyboard */,
@@ -202,6 +214,7 @@
 		0AF276BF1CD20172000F5261 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LJZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = likeme;
 				TargetAttributes = {
@@ -244,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF276DA1CD20172000F5261 /* LaunchScreen.storyboard in Resources */,
+				0AF277031CD207CD000F5261 /* LJZBTEPeripheralViewController.xib in Resources */,
 				0AF276D71CD20172000F5261 /* Assets.xcassets in Resources */,
 				0AF276D51CD20172000F5261 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +286,7 @@
 			files = (
 				0AF276D21CD20172000F5261 /* ViewController.m in Sources */,
 				0AF276CF1CD20172000F5261 /* AppDelegate.m in Sources */,
+				0AF277011CD2062A000F5261 /* LJZBTEPeripheralViewController.m in Sources */,
 				0AF276CC1CD20172000F5261 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
